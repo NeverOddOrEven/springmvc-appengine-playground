@@ -15,6 +15,14 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-web-3.2.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/spring-webmvc-3.2.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-beanutils-1.8.3.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-digester3-3.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/tiles-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/tiles-core-3.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/tiles-jsp-3.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/tiles-servlet-3.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/tiles-template-3.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/tiles-request-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/tiles-autotag-core-runtime-1.1.0.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
