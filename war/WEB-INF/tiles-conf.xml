@@ -16,4 +16,8 @@
     <definition name="list" extends="base_layout">
         <put-attribute name="body" value="/WEB-INF/pages/list.jsp" />
     </definition>
+    
+    <definition name="home" extends="base_layout">
+    	<put-attribute name="body" value="/WEB-INF/pages/home.jsp" />
+    </definition>
 </tiles-definitions>

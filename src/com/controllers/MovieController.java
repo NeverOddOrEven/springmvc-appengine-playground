@@ -1,22 +1,25 @@
 package com.controllers;
  
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
  
 @Controller
-@RequestMapping("/movie")
+
 public class MovieController {
- 
-	@RequestMapping(value="/{name}", method = RequestMethod.GET)
-	public String getMovie(@PathVariable String name, ModelMap model) {
- 
-		model.addAttribute("movie", name);
- 
+	
+	@RequestMapping("/movie.do")
+	public ModelAndView getMovie(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
+		String name = request.getParameter("name");
+		
+		ModelAndView mav = new ModelAndView("list");
+		mav.addObject("name", name);
+		
 		//return to jsp page, configured in mvc-dispatcher-servlet.xml, view resolver
-		return "list";
- 
+		return mav;
 	}
 }
