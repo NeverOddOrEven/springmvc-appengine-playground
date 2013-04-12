@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller("mobileHomeController")
-public class MHomeController {
+public class HomeController {
  
 	@RequestMapping("/mobile")
 	public ModelAndView home(ModelMap model) {
